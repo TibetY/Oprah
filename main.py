@@ -63,7 +63,7 @@ async def giveaway(ctx):
             await ctx.send("You didn't answer in time, gotta be quick!!")
             return
         else:
-            answers.append(msg.conent)
+            answers.append(msg.content)
 
     try:
         c_id = int(answers[0][2:-1])
