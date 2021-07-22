@@ -3,6 +3,7 @@ from discord.ext import commands
 import datetime
 import asyncio
 import random
+import os
 
 client = discord.Client()
 
@@ -120,5 +121,5 @@ async def reroll(ctx, channel: discord.TextChannel, id_, int):
 
     # end = datetime.datetime.utcnow() + datetime.timedelta(seconds=mins * 60)
 
-
-client.run('ODY3NTUwNTQ1MjU3NDMxMDgx.YPivaA.i99xUzY_lndSr815kA7382Y0TG0')
+my_secret = os.environ['TOKEN']
+client.run(my_secret)
